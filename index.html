@@ -3,388 +3,488 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>芸森ワーサム タイニーホテル｜ワイヤーフレーム</title>
+  <title>TINY HOTEL｜芸森ワーサム</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ===== HEADER ===== -->
-  <header class="header" id="header">
+  <!-- HEADER -->
+  <header class="header">
     <div class="header__inner">
-      <a href="#" class="header__logo">
-        <span class="header__logo-main">GEIMORI WASOM</span>
-        <span class="header__logo-sub">TINY HOTEL</span>
-      </a>
-      <nav class="header__nav" id="nav">
-        <ul class="header__nav-list">
-          <li><a href="#concept">コンセプト</a></li>
-          <li><a href="#sauna">サウナ</a></li>
-          <li><a href="#stay">宿泊</a></li>
-          <li><a href="#bbq">食事</a></li>
-          <li><a href="#art">アート</a></li>
-          <li><a href="#price">料金</a></li>
-          <li><a href="#access">アクセス</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ul>
-      </nav>
-      <a href="#reserve" class="header__cta">予約する</a>
-      <button class="header__burger" id="burger" aria-label="メニュー">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="header__logo">TINY HOTEL</div>
+      <div class="header__right">
+        <a href="#reserve" class="header__reserve-btn">空室を確認する</a>
+        <button class="header__burger" id="burger"><span></span><span></span></button>
+      </div>
     </div>
   </header>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero" id="hero">
-    <div class="hero__visual">
-      <p class="hero__visual-label">[ メインビジュアル写真 / スライドショー 4〜5枚 ]</p>
-      <h1 class="hero__catch">
-        札幌から30分、<br>
-        森の中の小さなホテル。
-      </h1>
-      <p class="hero__sub">プライベートサウナ付き 1棟貸切</p>
+  <!-- FV -->
+  <section class="fv">
+    <div class="fv__col fv__col--img">
+      <div class="img-ph">IMAGE</div>
+      <div class="img-ph">IMAGE</div>
     </div>
-  </section>
-
-  <!-- ===== CONCEPT ===== -->
-  <section class="concept section" id="concept">
-    <div class="container">
-      <div class="concept__inner">
-        <p class="section__label">Concept</p>
-        <h2 class="concept__title">
-          ちょうどいい、<br>非日常を。
-        </h2>
-        <div class="concept__text">
-          <p>
-            ここにコンセプト文が入ります。芸術の森のほど近く、森の中に佇む小さなコンテナホテル。プライベートサウナで整い、ウッドデッキでBBQを楽しみ、アートに囲まれた空間でゆっくりと過ごす。
-          </p>
-          <p>
-            ここに補足テキストが入ります。高級グランピングほど気張らない。日帰りサウナでは味わえない特別感。ここにあるのは、"ちょうどいい非日常"。
-          </p>
-        </div>
-        <div class="concept__features">
-          <div class="concept__feature">
-            <span class="concept__feature-number">30</span>
-            <span class="concept__feature-unit">min</span>
-            <p class="concept__feature-label">札幌中心部から</p>
-          </div>
-          <div class="concept__feature">
-            <span class="concept__feature-number">1</span>
-            <span class="concept__feature-unit">棟貸切</span>
-            <p class="concept__feature-label">完全プライベート</p>
-          </div>
-          <div class="concept__feature">
-            <span class="concept__feature-number">16,500</span>
-            <span class="concept__feature-unit">円〜/名</span>
-            <p class="concept__feature-label">サウナ付き</p>
-          </div>
+    <div class="fv__col fv__col--center">
+      <div class="fv__copy">
+        <p class="fv__copy-title">Tiny<br>Hotel</p>
+        <div class="fv__copy-divider"></div>
+        <div class="fv__copy-text">
+          <p class="fv__copy-main">札幌から三〇分、<br>森の中の小さなホテル。</p>
+          <p class="fv__copy-sub">プライベートサウナ付き一棟貸切</p>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- ===== SAUNA ===== -->
-  <section class="feature-section" id="sauna">
-    <div class="feature-section__img-wrap">
-      <div class="img-placeholder">[ サウナの写真 ]</div>
-    </div>
-    <div class="feature-section__content">
-      <p class="section__label">Private Sauna</p>
-      <h2 class="feature-section__title">ここに見出しテキストが入ります</h2>
-      <p class="feature-section__text">
-        ここに説明テキストが入ります。コンテナ型の専用プライベートサウナを併設。薪ストーブの炎を眺めながらセルフロウリュを楽しみ、ウッドデッキで森の外気浴へ。
-      </p>
-      <ul class="feature-section__list">
-        <li>テントサウナ＋薪ストーブ</li>
-        <li>セルフロウリュ可能</li>
-        <li>ウッドデッキで外気浴</li>
-        <li>宿泊者専用・完全貸切</li>
-      </ul>
-      <p class="wire-note">※ 特徴リストは実際の内容に差し替え</p>
+    <div class="fv__col fv__col--img">
+      <div class="img-ph">IMAGE</div>
     </div>
   </section>
 
-  <!-- ===== STAY ===== -->
-  <section class="feature-section feature-section--reverse" id="stay">
-    <div class="feature-section__img-wrap">
-      <div class="img-placeholder">[ 客室の写真 ]</div>
-    </div>
-    <div class="feature-section__content">
-      <p class="section__label">Tiny Hotel</p>
-      <h2 class="feature-section__title">ここに見出しテキストが入ります</h2>
-      <p class="feature-section__text">
-        ここに説明テキストが入ります。コンテナを改装したコンパクトなホテルは、ベッド2台・トイレ・浴室・洗面を完備。室内にはアート作品が展示され、泊まるだけで非日常。
-      </p>
-      <ul class="feature-section__list">
-        <li>1棟貸切（定員1〜2名）</li>
-        <li>ベッド2台・浴室・トイレ完備</li>
-        <li>室内アート展示</li>
-        <li>冷暖房完備・通年営業</li>
-      </ul>
-      <p class="wire-note">※ 設備写真を複数掲載して離脱防止</p>
-    </div>
-  </section>
-
-  <!-- ===== BBQ ===== -->
-  <section class="feature-section" id="bbq">
-    <div class="feature-section__img-wrap">
-      <div class="img-placeholder">[ BBQの写真 ]</div>
-    </div>
-    <div class="feature-section__content">
-      <p class="section__label">BBQ</p>
-      <h2 class="feature-section__title">ここに見出しテキストが入ります</h2>
-      <p class="feature-section__text">
-        ここに説明テキストが入ります。サウナで整った後は、ウッドデッキで贅沢なBBQタイム。手ぶらプランなら準備も片付けもおまかせ。北海道の食材を、森の空気と一緒に。
-      </p>
-      <ul class="feature-section__list">
-        <li>ウッドデッキBBQスペース</li>
-        <li>手ぶらBBQプランあり</li>
-        <li>地元食材を使用</li>
-        <li>サウナ→BBQ→宿泊の一気通貫体験</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ===== ART & NATURE ===== -->
-  <section class="art section" id="art">
-    <div class="container">
-      <div class="art__header">
-        <p class="section__label">Art & Nature</p>
-        <h2 class="art__title">ここに見出しテキストが入ります</h2>
-        <p class="art__text">
-          ここに説明テキストが入ります。芸術の森に隣接するこの場所でしか味わえない体験。室内のアート作品、森に差し込む光、焚き火の揺らめき。
-        </p>
+  <!-- INTRO -->
+  <section class="intro">
+    <div class="intro__inner">
+      <h2 class="intro__vertical">非日常に浸る。あるがままを過ごす時間。</h2>
+      <div class="intro__text">
+        <p>慌ただしい日々から抜け出し、<br>至福の時間を心ゆくまで体感できるように。</p>
+        <p>好きなタイミングでサウナに入り、<br>ウッドデッキで森の外気浴を楽しむこと。<br>焚き火を囲みながら、BBQに舌鼓を打つこと。<br>周囲に明かりのない森で、満天の星を見上げること。<br>誰にも急かされない、自分だけの時間に身を委ねること。</p>
+        <p>「ちょっとそこまで」の距離感で、<br>非日常に出会える場所。<br>タイニーホテルは、そんな大人の隠れ家です。</p>
       </div>
-      <div class="art__grid">
-        <div class="art__grid-item">[ 写真 1 / 縦長 ]</div>
-        <div class="art__grid-item">[ 写真 2 ]</div>
-        <div class="art__grid-item">[ 写真 3 ]</div>
+      <div class="intro__img">
+        <div class="img-ph img-ph--tall">IMAGE</div>
       </div>
     </div>
   </section>
 
-  <!-- ===== VOICE ===== -->
-  <section class="voice section" id="voice">
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about__bg">
+      <div class="img-ph img-ph--about-bg">IMAGE</div>
+    </div>
+    <div class="about__overlay">
+      <div class="about__text">
+        <p class="about__label">About</p>
+        <p class="about__sub">札幌市南区・芸術の森エリア　約2.3ヘクタールの森</p>
+        <h2 class="about__heading">都心からすぐなのに、深い森の中。<br>全室プライベートサウナ付きの<br>コンテナホテル。</h2>
+        <p class="about__desc">札幌芸術の森に隣接する約2.3ヘクタールの広大な敷地に佇む、コンテナ改装型の小さなホテル。全室にプライベートサウナを完備し、チェックインからチェックアウトまで好きな時間に好きなだけ「ととのう」体験を。移動時間の負担がないから、思い立った日にふらっと予約できるのも魅力です。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 固定予約ボタン -->
+  <div class="fixed-reserve">
+    <a href="#reserve">空室を確認<br><span>Reserve</span></a>
+  </div>
+
+  <!-- SAUNA -->
+  <section class="detail" id="sauna">
+    <div class="detail__layout">
+      <div class="img-ph img-ph--detail">IMAGE</div>
+      <div class="detail__content">
+        <p class="detail__label">Sauna</p>
+        <h2 class="detail__heading">誰にも邪魔されない、<br>自分だけのサウナ時間。</h2>
+        <p class="detail__desc">全室に専用のサウナルームを完備。HARVIA社製の本格電気ストーブサウナで、予約の時間を気にすることなく、好きなタイミングで何度でも「ととのう」体験を。サウナ後はそのままウッドデッキで外気浴。森の空気を浴びながら、最高のリラックスタイムをお過ごしください。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROOM -->
+  <section class="detail" id="room">
+    <div class="detail__layout detail__layout--reverse">
+      <div class="img-ph img-ph--detail">IMAGE</div>
+      <div class="detail__content">
+        <p class="detail__label">Room</p>
+        <h2 class="detail__heading">小さいけれど、全部ある。</h2>
+        <p class="detail__desc">1〜2名で宿泊できるコンパクトなコンテナホテル。ツインベースのベッドが2台、バス・シャワーブース・トイレを完備。そして全室にプライベートサウナルーム付き。アート感覚のお部屋は、自然の中にありながら快適な空間でくつろいでいただけます。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOICE -->
+  <section class="voice" id="voice">
     <div class="container">
-      <p class="section__label">Voice</p>
-      <h2 class="voice__title">ゲストの声</h2>
+      <h2 class="section-title">宿泊者の声</h2>
       <div class="voice__grid">
         <div class="voice__card">
-          <div class="voice__stars">★★★★★</div>
-          <p class="voice__comment">「ここに口コミテキストが入ります。コスパが良い。プライベートサウナ付きでこの値段は札幌ではなかなかない。」</p>
-          <p class="voice__author">— 40代男性・経営者</p>
-        </div>
-        <div class="voice__card">
-          <div class="voice__stars">★★★★★</div>
-          <p class="voice__comment">「ここに口コミテキストが入ります。プライベート感が最高。他のお客さんとの接点がなく、大人の隠れ家という感じ。」</p>
-          <p class="voice__author">— 30代男性・会社員</p>
-        </div>
-        <div class="voice__card">
-          <div class="voice__stars">★★★★★</div>
-          <p class="voice__comment">「ここに口コミテキストが入ります。サウナの後に森で外気浴、そのままBBQ。この流れが最高すぎました。」</p>
-          <p class="voice__author">— 30代女性・カップル</p>
-        </div>
-      </div>
-      <p class="wire-note" style="text-align:center; margin-top:16px;">※ じゃらん・サウナイキタイから実際の口コミを引用</p>
-    </div>
-  </section>
-
-  <!-- ===== PRICE ===== -->
-  <section class="price section" id="price">
-    <div class="container">
-      <p class="section__label">Price</p>
-      <h2 class="price__title">料金</h2>
-      <div class="price__cards">
-        <div class="price__card">
-          <div class="price__card-badge">宿泊</div>
-          <h3 class="price__card-name">タイニーホテル 1泊プラン</h3>
-          <div class="price__card-price">
-            <span class="price__card-yen">¥</span>
-            <span class="price__card-amount">16,500</span>
-            <span class="price__card-unit">〜/名</span>
-          </div>
-          <ul class="price__card-includes">
-            <li>1棟貸切（定員1〜2名）</li>
-            <li>プライベートサウナ利用込み</li>
-            <li>浴室・トイレ・冷暖房完備</li>
-            <li>駐車場無料</li>
-          </ul>
-          <a href="#reserve" class="btn btn--primary">宿泊を予約する</a>
-        </div>
-        <div class="price__card">
-          <div class="price__card-badge">日帰り</div>
-          <h3 class="price__card-name">デイユースプラン</h3>
-          <div class="price__card-price">
-            <span class="price__card-yen">¥</span>
-            <span class="price__card-amount">6,000</span>
-            <span class="price__card-unit">〜/名</span>
-          </div>
-          <ul class="price__card-includes">
-            <li>6時間利用（最大4名）</li>
-            <li>プライベートサウナ利用込み</li>
-            <li>BBQオプション追加可</li>
-            <li>駐車場無料</li>
-          </ul>
-          <a href="#reserve" class="btn btn--outline">デイユースを予約する</a>
-        </div>
-      </div>
-      <p class="price__note">※ 季節・プランにより料金が異なります。詳細は予約ページをご確認ください。</p>
-    </div>
-  </section>
-
-  <!-- ===== ACCESS ===== -->
-  <section class="access section" id="access">
-    <div class="container">
-      <p class="section__label">Access</p>
-      <h2 class="access__title">札幌から、たった30分。</h2>
-      <div class="access__inner">
-        <div class="access__map-placeholder">[ Google Map 埋め込み ]</div>
-        <div class="access__info">
-          <div class="access__address">
-            <h3>芸森ワーサム</h3>
-            <p>〒005-0864<br>北海道札幌市南区芸術の森エリア</p>
-          </div>
-          <div class="access__routes">
-            <div class="access__route">
-              <div class="access__route-icon">車</div>
-              <div>
-                <strong>お車でお越しの方</strong>
-                <p>札幌中心部から約30分<br>新千歳空港から約50分<br>無料駐車場完備</p>
-              </div>
-            </div>
-            <div class="access__route">
-              <div class="access__route-icon">バス</div>
-              <div>
-                <strong>公共交通機関</strong>
-                <p>地下鉄真駒内駅からバス約15分</p>
-              </div>
+          <div class="voice__header">
+            <div class="voice__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg></div>
+            <div>
+              <p class="voice__author">30代カップル<span>札幌市内</span></p>
+              <p class="voice__stars">★★★★★</p>
             </div>
           </div>
+          <p class="voice__comment">サウナが最高でした。予約の時間を気にせず、好きなときに入れるのが本当に贅沢。外気浴で森の空気を吸い込む瞬間がたまらないです。</p>
+        </div>
+        <div class="voice__card">
+          <div class="voice__header">
+            <div class="voice__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg></div>
+            <div>
+              <p class="voice__author">40代男性・経営者<span>札幌市内</span></p>
+              <p class="voice__stars">★★★★★</p>
+            </div>
+          </div>
+          <p class="voice__comment">プライベート感が最高。他のお客さんとの接点がなく、大人の隠れ家という感じ。ゴルフ帰りに寄りましたが、サウナとBBQで完全にリフレッシュできました。</p>
+        </div>
+        <div class="voice__card">
+          <div class="voice__header">
+            <div class="voice__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg></div>
+            <div>
+              <p class="voice__author">30代女性・会社員<span>札幌市内</span></p>
+              <p class="voice__stars">★★★★★</p>
+            </div>
+          </div>
+          <p class="voice__comment">札幌から30分でこの非日常感はすごい。森に囲まれたサウナ、BBQ、焚き火...全部最高でした。週末のご褒美にまた来ます。</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== FAQ ===== -->
-  <section class="faq section" id="faq">
+  <!-- FLOW -->
+  <section class="flow" id="flow">
     <div class="container">
-      <p class="section__label">FAQ</p>
-      <h2 class="faq__title">よくあるご質問</h2>
+      <h2 class="section-title">ふたりだけの、森の20時間。</h2>
+      <p class="flow__sub">チェックインからチェックアウトまで、誰にも急かされない特別な滞在を。</p>
+    </div>
+
+    <div class="flow__body">
+      <div class="flow-sidebar" id="flow-sidebar">
+        <div class="flow-sidebar__inner">
+          <div class="flow-sidebar__line"></div>
+          <a href="#flow-1" class="flow-sidebar__point active" data-index="0"><span>15:00</span>Check-in</a>
+          <a href="#flow-2" class="flow-sidebar__point" data-index="1"><span>16:00</span>Sauna</a>
+          <a href="#flow-3" class="flow-sidebar__point" data-index="2"><span>17:30</span>BBQ</a>
+          <a href="#flow-4" class="flow-sidebar__point" data-index="3"><span>20:00</span>Night</a>
+          <a href="#flow-5" class="flow-sidebar__point" data-index="4"><span>23:00</span>Stay</a>
+          <a href="#flow-6" class="flow-sidebar__point" data-index="5"><span>翌朝</span>Morning</a>
+          <a href="#flow-7" class="flow-sidebar__point" data-index="6"><span>11:00</span>Check-out</a>
+        </div>
+      </div>
+
+      <div class="flow__items">
+
+    <div class="flow-item" id="flow-1">
+      <div class="flow-item__layout">
+        <div class="flow-item__images">
+          <div class="img-ph img-ph--flow">IMAGE</div>
+        </div>
+        <div class="flow-item__content">
+          <span class="flow-item__time">15:00</span>
+          <p class="flow-item__label">Check-in</p>
+          <h3 class="flow-item__heading">鍵を受け取ったら、ふたりだけの時間がはじまる</h3>
+          <p class="flow-item__desc">森の中の小さなホテルに到着。札幌市内からわずか30分のドライブ。鍵を受け取ったら、あとは自由。お部屋でくつろぐもよし、森を散策するもよし。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flow-item" id="flow-2">
+      <div class="flow-item__layout">
+        <div class="flow-item__images">
+          <div class="img-ph img-ph--flow">IMAGE</div>
+          <div class="flow-item__images-sub">
+            <div class="img-ph img-ph--flow-sub">IMAGE</div>
+            <div class="img-ph img-ph--flow-sub">IMAGE</div>
+          </div>
+        </div>
+        <div class="flow-item__content">
+          <span class="flow-item__time">16:00</span>
+          <p class="flow-item__label">Private Sauna</p>
+          <h3 class="flow-item__heading">好きな時間に、好きなだけ</h3>
+          <p class="flow-item__desc">お部屋のサウナルームで、誰にも気兼ねなく「ととのう」体験を。HARVIA社製の本格ストーブで身体の芯から温まったら、ウッドデッキで森の外気浴へ。この贅沢を何度でも。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flow-item" id="flow-3">
+      <div class="flow-item__layout">
+        <div class="flow-item__images">
+          <div class="img-ph img-ph--flow">IMAGE</div>
+        </div>
+        <div class="flow-item__content">
+          <span class="flow-item__time">17:30</span>
+          <p class="flow-item__label">BBQ Dinner</p>
+          <h3 class="flow-item__heading">焚き火を眺めながら、北海道の食材を</h3>
+          <p class="flow-item__desc">ウッドデッキでワーサム特製BBQ（5,000円/名）を堪能。北海道の食材を楽しみながら、焚き火の炎を眺める贅沢な夕食時間。Weber®ガスグリルレンタル（3,000円）で食材持ち込みもOK。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flow-item" id="flow-4">
+      <div class="flow-item__layout">
+        <div class="flow-item__images">
+          <div class="img-ph img-ph--flow">IMAGE</div>
+          <div class="flow-item__images-sub">
+            <div class="img-ph img-ph--flow-sub">IMAGE</div>
+            <div class="img-ph img-ph--flow-sub">IMAGE</div>
+          </div>
+        </div>
+        <div class="flow-item__content">
+          <span class="flow-item__time">20:00</span>
+          <p class="flow-item__label">Night Time</p>
+          <h3 class="flow-item__heading">周囲に明かりのない森で、満天の星を</h3>
+          <p class="flow-item__desc">日が暮れたら焚き火を囲みながら、お酒を片手にゆったりと。周囲に明かりが少ない森の中だから、晴れた夜には満天の星空が広がります。もう一度サウナに入ってから眠るのもおすすめ。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flow-item" id="flow-5">
+      <div class="flow-item__layout">
+        <div class="flow-item__images">
+          <div class="img-ph img-ph--flow">IMAGE</div>
+        </div>
+        <div class="flow-item__content">
+          <span class="flow-item__time">23:00</span>
+          <p class="flow-item__label">Stay</p>
+          <h3 class="flow-item__heading">森の静けさの中、深い眠りへ</h3>
+          <p class="flow-item__desc">アート感覚のお部屋で、冷暖房完備の快適な空間。ふかふかのベッドに身を委ねて。街の喧騒から離れた森の中だからこその、深い眠りを。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flow-item" id="flow-6">
+      <div class="flow-item__layout">
+        <div class="flow-item__images">
+          <div class="img-ph img-ph--flow">IMAGE</div>
+          <div class="flow-item__images-sub">
+            <div class="img-ph img-ph--flow-sub">IMAGE</div>
+            <div class="img-ph img-ph--flow-sub">IMAGE</div>
+          </div>
+        </div>
+        <div class="flow-item__content">
+          <span class="flow-item__time">翌朝</span>
+          <p class="flow-item__label">Morning</p>
+          <h3 class="flow-item__heading">朝の清々しい空気の中、森を散策</h3>
+          <p class="flow-item__desc">朝の澄んだ森の空気を感じながら目覚める贅沢。芸術の森周辺を散策したり、もう一度サウナに入ったり。朝食はセンター棟のレストラン＆カフェでどうぞ。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flow-item" id="flow-7">
+      <div class="flow-item__layout">
+        <div class="flow-item__images">
+          <div class="img-ph img-ph--flow">IMAGE</div>
+        </div>
+        <div class="flow-item__content">
+          <span class="flow-item__time">11:00</span>
+          <p class="flow-item__label">Check-out</p>
+          <h3 class="flow-item__heading">札幌市内まで、たった30分</h3>
+          <p class="flow-item__desc">最後にもう一度サウナを楽しんでから、チェックアウト。札幌市内までたった30分だから、午後からの予定も充実。「また来たい」—きっとそう思っていただける体験がここにあります。</p>
+        </div>
+      </div>
+    </div>
+
+      </div><!-- /.flow__items -->
+    </div><!-- /.flow__body -->
+  </section>
+
+  <!-- ROOM DETAIL -->
+  <section class="room-detail" id="room-detail">
+    <div class="container">
+      <div class="room-detail__layout">
+        <div class="room-detail__images">
+          <div class="img-ph img-ph--room-main">IMAGE</div>
+          <div class="room-detail__images-sub">
+            <div class="img-ph img-ph--room-sub">IMAGE</div>
+            <div class="img-ph img-ph--room-sub">IMAGE</div>
+          </div>
+        </div>
+        <div class="room-detail__info">
+          <h2 class="room-detail__name">TINY HOTEL</h2>
+          <p class="room-detail__desc">好きな時間に好きなだけプライベートサウナを満喫しながら、宿泊できる小さなホテル。アート感覚のお部屋は、ツインベースのベッドとトイレ、浴室とサウナ付き。</p>
+          <p class="room-detail__desc">客室併設のウッドデッキでは静かな森に囲まれて、外気浴やバーベキューも楽しめる。ストレスフリーの空間でゆっくりと格別のととのいを。</p>
+          <div class="room-detail__price">24,000円〜<span>（税込・サービス料込／1室2名利用時）</span></div>
+          <p class="room-detail__note">※火災抑止の観点からタイニーホテルへのバーベキューコンロ・火電気を熱源に使用する器具の持ち込みは禁止とさせて頂いております。</p>
+
+          <div class="room-detail__accordion">
+            <div class="room-detail__acc-item">
+              <button class="room-detail__acc-q"><span>設備について</span><span class="room-detail__acc-icon">+</span></button>
+              <div class="room-detail__acc-a">
+                <div class="room-detail__table">
+                  <div class="room-detail__table-row">
+                    <div class="room-detail__table-label">基本設備</div>
+                    <div class="room-detail__table-value">リビング＆ベッドルーム（宿泊定員2名）<br>客室サウナ（HARVIA社製電気ストーブ）・バス・シャワーブース・トイレ・洗面台<br>冷暖房エアコン・小型冷蔵庫・電気ケトル・ドライヤー<br>ウッドデッキ（外気浴・BBQスペース）<br>アウトドアテーブル＆イス</div>
+                  </div>
+                  <div class="room-detail__table-row">
+                    <div class="room-detail__table-label">客室備品</div>
+                    <div class="room-detail__table-value">ハンドソープ、手指消毒用アルコール<br>バスアメニティ（シャンプー、コンディショナー、ボディソープ、フェイスタオル、バスタオル、バスマット）<br>歯ブラシ、髭剃り、ヘアブラシ、コットン、綿棒<br>※オリジナルサウナポンチョのレンタルもご用意しております（1着500円）</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="room-detail__acc-item">
+              <button class="room-detail__acc-q"><span>お食事について</span><span class="room-detail__acc-icon">+</span></button>
+              <div class="room-detail__acc-a">
+                <p class="room-detail__food-text"><strong>ワーサム特製BBQ</strong>　5,000円/名（2名様より）<br>北海道の食材を使った贅沢なBBQコース。ご予約時にオプションよりお選びください。</p>
+                <p class="room-detail__food-text"><strong>食材お持ち込み</strong>　Weber®ガスグリルレンタル 3,000円<br>お好みの食材をお持ち込みいただけます。</p>
+                <p class="room-detail__food-text"><strong>センター棟 レストラン＆カフェ</strong><br>平日 11:00〜18:00（L.O.16:30）<br>土日祝 11:00〜18:00（L.O.17:00）<br>火曜日のみ 11:00〜15:00（L.O.14:30）</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANSHIN -->
+  <section class="anshin" id="anshin">
+    <div class="container">
+      <h2 class="section-title">安心してお過ごしいただくために</h2>
+      <p class="anshin__sub">初めてのご利用でも不安なく。よくいただくご質問に、先回りしてお答えします。</p>
+      <div class="anshin__grid">
+        <div class="anshin__card">
+          <div class="img-ph img-ph--anshin">IMAGE</div>
+          <h3>虫対策について</h3>
+          <p>施設周辺は定期的に防虫処理を実施。室内は密閉性の高いコンテナ構造のため、虫の侵入を最小限に抑えています。虫除けスプレー・蚊取り線香もご用意しております。</p>
+        </div>
+        <div class="anshin__card">
+          <div class="img-ph img-ph--anshin">IMAGE</div>
+          <h3>冬の寒さ・暖房について</h3>
+          <p>室内は冷暖房エアコン完備で冬でも快適。サウナも通年ご利用いただけます。雪景色の中でのサウナ×外気浴は、冬ならではの格別な体験です。</p>
+        </div>
+        <div class="anshin__card">
+          <div class="img-ph img-ph--anshin">IMAGE</div>
+          <h3>トイレ・水回りの清潔さ</h3>
+          <p>各棟に専用のバス・シャワーブース・トイレ・洗面台を完備。共用ではなく完全プライベートです。清掃は毎回徹底して行っております。</p>
+        </div>
+        <div class="anshin__card">
+          <div class="img-ph img-ph--anshin">IMAGE</div>
+          <h3>Wi-Fi・電波について</h3>
+          <p>施設内は無料Wi-Fi完備、携帯電話の電波も問題なく届きます。お仕事やSNS投稿もストレスなく行えます。</p>
+        </div>
+        <div class="anshin__card">
+          <div class="img-ph img-ph--anshin">IMAGE</div>
+          <h3>アメニティ充実</h3>
+          <p>シャンプー・コンディショナー・ボディソープ等のバスアメニティを完備。歯ブラシ・ヘアブラシ・コットン等もご用意。手ぶらでもご安心ください。</p>
+        </div>
+        <div class="anshin__card">
+          <div class="img-ph img-ph--anshin">IMAGE</div>
+          <h3>季節ごとの楽しみ方</h3>
+          <p>春夏は新緑の森でBBQ・焚き火・星空観察。秋は紅葉に包まれたサウナ×外気浴。冬は雪景色の中のサウナ体験。通年営業でいつでもお楽しみいただけます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLAN -->
+  <section class="plan" id="plan">
+    <div class="container">
+      <h2 class="section-title">料金プラン</h2>
+      <div class="plan__cards">
+        <div class="plan__card">
+          <span class="plan__badge">宿泊</span>
+          <h3 class="plan__name">タイニーホテル 素泊まりプラン</h3>
+          <div class="plan__price">¥24,000〜<span>/室</span></div>
+          <ul class="plan__includes">
+            <li>1棟貸切（定員2名）</li>
+            <li>プライベートサウナ利用込み</li>
+            <li>バス・トイレ・冷暖房完備</li>
+            <li>駐車場無料</li>
+            <li>チェックイン15:00〜 / アウト11:00</li>
+          </ul>
+          <a href="#reserve" class="plan__btn plan__btn--primary">空室を確認する</a>
+        </div>
+        <div class="plan__card">
+          <span class="plan__badge">オプション</span>
+          <h3 class="plan__name">BBQ・食事プラン</h3>
+          <div class="plan__price">¥5,000〜<span>/名</span></div>
+          <ul class="plan__includes">
+            <li>ワーサム特製BBQ（5,000円/名・2名〜）</li>
+            <li>Weber®ガスグリルレンタル（3,000円）</li>
+            <li>食材持ち込みOK</li>
+            <li>センター棟レストランも利用可</li>
+          </ul>
+          <a href="#reserve" class="plan__btn">予約時にオプション選択</a>
+        </div>
+      </div>
+      <p class="plan__note">※ 季節・プランにより料金が異なります。じゃらん限定で日曜〜金曜15%OFFのスペシャルプランもございます。</p>
+    </div>
+  </section>
+
+  <!-- ACCESS -->
+  <section class="access" id="access">
+    <div class="container">
+      <h2 class="section-title">アクセス</h2>
+      <div class="img-ph img-ph--map">Google Map</div>
+      <p class="access__address">芸森ワーサム（W-AWESOME）<br>〒005-0864 北海道札幌市南区芸術の森</p>
+      <div class="access__routes">
+        <div class="access__col">
+          <h3>お車でお越しの場合</h3>
+          <p>札幌市中心部から車で約30分<br>新千歳空港から約50分<br>駐車場完備（無料）</p>
+        </div>
+        <div class="access__col">
+          <h3>公共交通機関をご利用の場合</h3>
+          <p>地下鉄南北線「真駒内駅」からバス約15分<br>タクシーで約10分</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2 class="section-title">よくあるご質問</h2>
       <div class="faq__list">
         <div class="faq__item">
-          <button class="faq__question">
-            <span>チェックイン・チェックアウトの時間は？</span>
-            <span class="faq__icon">+</span>
-          </button>
-          <div class="faq__answer">
-            <p>ここに回答テキストが入ります。チェックインは15:00〜、チェックアウトは翌10:00です。</p>
-          </div>
+          <button class="faq__q"><span>チェックイン・チェックアウトの時間は？</span><span class="faq__icon">+</span></button>
+          <div class="faq__a"><p>チェックインは15:00〜19:00、チェックアウトは翌11:00です。</p></div>
         </div>
         <div class="faq__item">
-          <button class="faq__question">
-            <span>虫や寒さが心配です。大丈夫ですか？</span>
-            <span class="faq__icon">+</span>
-          </button>
-          <div class="faq__answer">
-            <p>ここに回答テキストが入ります。室内は冷暖房完備で快適にお過ごしいただけます。</p>
-          </div>
+          <button class="faq__q"><span>冬でもサウナは使えますか？</span><span class="faq__icon">+</span></button>
+          <div class="faq__a"><p>はい、通年利用可能です。雪景色の中でのサウナ×外気浴は冬ならではの贅沢な体験です。</p></div>
         </div>
         <div class="faq__item">
-          <button class="faq__question">
-            <span>BBQの食材は持ち込みできますか？</span>
-            <span class="faq__icon">+</span>
-          </button>
-          <div class="faq__answer">
-            <p>ここに回答テキストが入ります。はい、食材のお持ち込みも可能です。</p>
-          </div>
+          <button class="faq__q"><span>食事はどうすればいいですか？</span><span class="faq__icon">+</span></button>
+          <div class="faq__a"><p>ワーサム特製BBQ（5,000円/名・2名様より）またはWeber®ガスグリルレンタル（3,000円）で食材持ち込みも可能です。ご予約時にオプションよりお選びください。センター棟内のレストラン＆カフェもご利用いただけます。</p></div>
         </div>
         <div class="faq__item">
-          <button class="faq__question">
-            <span>冬でも営業していますか？</span>
-            <span class="faq__icon">+</span>
-          </button>
-          <div class="faq__answer">
-            <p>ここに回答テキストが入ります。はい、通年営業しております。</p>
-          </div>
+          <button class="faq__q"><span>ペット同伴は可能ですか？</span><span class="faq__icon">+</span></button>
+          <div class="faq__a"><p>タイニーホテルのペット同伴についてはお問い合わせください。敷地内にはドッグラン付きキャビンもございます。</p></div>
         </div>
         <div class="faq__item">
-          <button class="faq__question">
-            <span>駐車場はありますか？</span>
-            <span class="faq__icon">+</span>
-          </button>
-          <div class="faq__answer">
-            <p>ここに回答テキストが入ります。はい、無料の専用駐車場をご用意しております。</p>
-          </div>
+          <button class="faq__q"><span>アメニティ・設備は何がありますか？</span><span class="faq__icon">+</span></button>
+          <div class="faq__a"><p>シャンプー・コンディショナー・ボディソープなどのバスアメニティ、歯ブラシ・ヘアブラシ等をご用意。エアコン・冷蔵庫・電気ケトル・ドライヤーも完備。オリジナルサウナポンチョ（500円）のレンタルもございます。</p></div>
         </div>
         <div class="faq__item">
-          <button class="faq__question">
-            <span>子ども連れでも利用できますか？</span>
-            <span class="faq__icon">+</span>
-          </button>
-          <div class="faq__answer">
-            <p>ここに回答テキストが入ります。タイニーホテルは定員1〜2名の大人向け施設です。</p>
-          </div>
+          <button class="faq__q"><span>駐車場はありますか？</span><span class="faq__icon">+</span></button>
+          <div class="faq__a"><p>はい、無料の駐車場を完備しております。</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== CTA ===== -->
-  <section class="cta section" id="reserve">
+  <!-- RESERVE -->
+  <section class="reserve" id="reserve">
     <div class="container">
-      <div class="cta__inner">
-        <p class="cta__catch">ここにキャッチコピーが入ります</p>
-        <h2 class="cta__title">ご予約・お問い合わせ</h2>
-        <div class="cta__buttons">
-          <a href="#" class="btn btn--primary btn--large">宿泊を予約する</a>
-          <a href="#" class="btn btn--outline btn--large">デイユースを予約する</a>
-        </div>
-        <p class="cta__contact">
-          お電話でのご予約・お問い合わせ<br>
-          <a href="tel:011-000-0000" class="cta__phone">011-000-0000</a>
-          <span class="cta__hours">（受付 9:30〜20:00）</span>
-        </p>
-        <p class="wire-note">※ 電話番号・予約リンクは実際のものに差し替え</p>
+      <h2 class="section-title">森の中の特別な一日を、あなたに。</h2>
+      <p class="reserve__desc">お電話またはWebからご予約いただけます。ご不明点はお気軽にお問い合わせください。</p>
+      <div class="reserve__buttons">
+        <a href="#" class="reserve__btn reserve__btn--primary">空室を確認する</a>
+        <a href="#" class="reserve__btn">お問い合わせ</a>
       </div>
+      <p class="reserve__tel">TEL: <strong>011-000-0000</strong>（受付 9:30〜20:00）</p>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
         <div class="footer__brand">
-          <p class="footer__logo">GEIMORI WASOM</p>
-          <p class="footer__logo-sub">TINY HOTEL</p>
-          <p class="footer__address">〒005-0864 北海道札幌市南区芸術の森エリア</p>
+          <p class="footer__logo">GEIMORI W-AWESOME</p>
+          <p class="footer__address">〒005-0864 北海道札幌市南区芸術の森</p>
         </div>
-        <div class="footer__links">
-          <ul>
-            <li><a href="#concept">コンセプト</a></li>
-            <li><a href="#sauna">サウナ</a></li>
-            <li><a href="#stay">宿泊</a></li>
-            <li><a href="#bbq">食事</a></li>
-          </ul>
-          <ul>
-            <li><a href="#art">アート</a></li>
-            <li><a href="#price">料金</a></li>
-            <li><a href="#access">アクセス</a></li>
-            <li><a href="#faq">FAQ</a></li>
-          </ul>
-        </div>
-        <div class="footer__social">
-          <a href="#" aria-label="Instagram">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
-          </a>
-          <a href="#" aria-label="Facebook">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-          </a>
-        </div>
+        <nav class="footer__nav">
+          <a href="#about">ABOUT</a>
+          <a href="#sauna">SAUNA</a>
+          <a href="#room">ROOM</a>
+          <a href="#flow">過ごし方</a>
+          <a href="#plan">料金</a>
+          <a href="#access">アクセス</a>
+          <a href="#faq">FAQ</a>
+        </nav>
       </div>
-      <p class="footer__copy">&copy; 2025 GEIMORI WASOM. All rights reserved.</p>
+      <p class="footer__copy">© 2025 GEIMORI W-AWESOME. All rights reserved.</p>
     </div>
   </footer>
 
