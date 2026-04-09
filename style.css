@@ -390,10 +390,12 @@ ul { list-style: none; }
   .flow-item__layout, .flow-item__layout--reverse { grid-template-columns: 1fr; direction: ltr; }
   .flow-timeline { flex-wrap: wrap; gap: 8px; justify-content: center; }
   .room-detail__layout { grid-template-columns: 1fr; }
+  .room-detail__images { position: static; }
   .anshin__grid { grid-template-columns: 1fr; }
   .plan__cards { grid-template-columns: 1fr; }
   .access__routes { grid-template-columns: 1fr; }
   .reserve__buttons { flex-direction: column; align-items: center; }
   .fixed-reserve { bottom: 12px; right: 12px; }
   .footer__inner { flex-direction: column; gap: 16px; }
+  .footer__nav { flex-wrap: wrap; gap: 10px 16px; }
 }
