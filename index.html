@@ -6,27 +6,55 @@
   <title>TINY HOTEL｜芸森ワーサム</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Sans+JP:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <p class="loader__title">TINY<br>HOTEL</p>
+      <span class="loader__divider"></span>
+      <div class="loader__text">
+        <p class="loader__main">札幌から三〇分、<br>森の中の小さなホテル。</p>
+        <p class="loader__sub">プライベートサウナ付き一棟貸切</p>
+      </div>
+    </div>
+  </div>
+
   <!-- HEADER -->
-  <header class="header">
+  <header class="header" id="header">
     <div class="header__inner">
-      <div class="header__logo">TINY HOTEL</div>
+      <a href="#top" class="header__logo" id="header-logo">TINY HOTEL</a>
       <div class="header__right">
         <a href="#reserve" class="header__reserve-btn">空室を確認する</a>
-        <button class="header__burger" id="burger"><span></span><span></span></button>
+        <button class="header__burger" id="burger" aria-label="メニュー"><span></span><span></span><span></span></button>
       </div>
     </div>
   </header>
 
+  <!-- DRAWER MENU -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <nav class="drawer" id="drawer" aria-hidden="true">
+    <button class="drawer__close" id="drawer-close" aria-label="閉じる">×</button>
+    <ul class="drawer__list">
+      <li><a href="#about"><span class="drawer__en">About</span><span class="drawer__jp">タイニーホテルについて</span></a></li>
+      <li><a href="#sauna"><span class="drawer__en">Sauna</span><span class="drawer__jp">サウナ</span></a></li>
+      <li><a href="#room"><span class="drawer__en">Room</span><span class="drawer__jp">お部屋</span></a></li>
+      <li><a href="#flow"><span class="drawer__en">Stay</span><span class="drawer__jp">過ごし方</span></a></li>
+      <li><a href="#plan"><span class="drawer__en">Plan</span><span class="drawer__jp">料金プラン</span></a></li>
+      <li><a href="#access"><span class="drawer__en">Access</span><span class="drawer__jp">アクセス</span></a></li>
+      <li><a href="#faq"><span class="drawer__en">FAQ</span><span class="drawer__jp">よくあるご質問</span></a></li>
+    </ul>
+    <a href="#reserve" class="drawer__cta">空室を確認する</a>
+  </nav>
+
   <!-- FV -->
   <section class="fv">
     <div class="fv__col fv__col--img">
-      <div class="img-ph">IMAGE</div>
-      <div class="img-ph">IMAGE</div>
+      <img class="img-ph img-ph--fv" src="tinyhotel画像/Y326384099.jpg" alt="サウナで寛ぐ二人">
+      <img class="img-ph img-ph--fv" src="tinyhotel画像/LINE_ALBUM_tiny_260420_2.jpg" alt="ツインベッドの客室">
     </div>
     <div class="fv__col fv__col--center">
       <div class="fv__copy">
@@ -39,7 +67,7 @@
       </div>
     </div>
     <div class="fv__col fv__col--img">
-      <div class="img-ph">IMAGE</div>
+      <img class="img-ph img-ph--fv" src="tinyhotel画像/1_2.jpg" alt="雪景色のコンテナホテル外観">
     </div>
   </section>
 
@@ -53,7 +81,7 @@
         <p>「ちょっとそこまで」の距離感で、<br>非日常に出会える場所。<br>タイニーホテルは、そんな大人の隠れ家です。</p>
       </div>
       <div class="intro__img">
-        <div class="img-ph img-ph--tall">IMAGE</div>
+        <img class="img-ph img-ph--tall" src="tinyhotel画像/LINE_ALBUM_tiny_260420_15.jpg" alt="雪景色の森と木々">
       </div>
     </div>
   </section>
@@ -61,7 +89,7 @@
   <!-- ABOUT -->
   <section class="about" id="about">
     <div class="about__bg">
-      <div class="img-ph img-ph--about-bg">IMAGE</div>
+      <img class="img-ph img-ph--about-bg" src="tinyhotel画像/Y326384042.jpg" alt="敷地の空撮">
     </div>
     <div class="about__overlay">
       <div class="about__text">
@@ -75,13 +103,26 @@
 
   <!-- 固定予約ボタン -->
   <div class="fixed-reserve">
-    <a href="#reserve">空室を確認<br><span>Reserve</span></a>
+    <a href="#reserve" aria-label="空室を確認する">
+      <svg class="fixed-reserve__ring" viewBox="0 0 120 120" aria-hidden="true">
+        <defs>
+          <path id="fr-circle" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/>
+        </defs>
+        <text class="fixed-reserve__circular">
+          <textPath href="#fr-circle" startOffset="0">RESERVE · ONLINE · 空室確認 · </textPath>
+        </text>
+      </svg>
+      <span class="fixed-reserve__core">
+        <span class="fixed-reserve__label">予約</span>
+        <span class="fixed-reserve__arrow">→</span>
+      </span>
+    </a>
   </div>
 
   <!-- SAUNA -->
   <section class="detail" id="sauna">
     <div class="detail__layout">
-      <div class="img-ph img-ph--detail">IMAGE</div>
+      <img class="img-ph img-ph--detail" src="tinyhotel画像/Y326384054.jpg" alt="HARVIA製の本格電気ストーブサウナ">
       <div class="detail__content">
         <p class="detail__label">Sauna</p>
         <h2 class="detail__heading">誰にも邪魔されない、<br>自分だけのサウナ時間。</h2>
@@ -93,7 +134,7 @@
   <!-- ROOM -->
   <section class="detail" id="room">
     <div class="detail__layout detail__layout--reverse">
-      <div class="img-ph img-ph--detail">IMAGE</div>
+      <img class="img-ph img-ph--detail" src="tinyhotel画像/LINE_ALBUM_tiny_260420_2.jpg" alt="ツインベッドの客室">
       <div class="detail__content">
         <p class="detail__label">Room</p>
         <h2 class="detail__heading">小さいけれど、全部ある。</h2>
@@ -167,7 +208,7 @@
     <div class="flow-item" id="flow-1">
       <div class="flow-item__layout">
         <div class="flow-item__images">
-          <div class="img-ph img-ph--flow">IMAGE</div>
+          <img class="img-ph img-ph--flow" src="tinyhotel画像/1.jpg" alt="森の中のホテル到着">
         </div>
         <div class="flow-item__content">
           <span class="flow-item__time">15:00</span>
@@ -181,10 +222,10 @@
     <div class="flow-item" id="flow-2">
       <div class="flow-item__layout">
         <div class="flow-item__images">
-          <div class="img-ph img-ph--flow">IMAGE</div>
+          <img class="img-ph img-ph--flow" src="tinyhotel画像/Y326384044.jpg" alt="サウナ内部">
           <div class="flow-item__images-sub">
-            <div class="img-ph img-ph--flow-sub">IMAGE</div>
-            <div class="img-ph img-ph--flow-sub">IMAGE</div>
+            <img class="img-ph img-ph--flow-sub" src="tinyhotel画像/Y326384009.jpg" alt="HARVIAサウナストーブ">
+            <img class="img-ph img-ph--flow-sub" src="tinyhotel画像/Y326384076.jpg" alt="雪上の外気浴">
           </div>
         </div>
         <div class="flow-item__content">
@@ -199,7 +240,7 @@
     <div class="flow-item" id="flow-3">
       <div class="flow-item__layout">
         <div class="flow-item__images">
-          <div class="img-ph img-ph--flow">IMAGE</div>
+          <img class="img-ph img-ph--flow" src="tinyhotel画像/bbq/LINE_ALBUM_BBQ_260420_5.jpg" alt="北海道食材のBBQ">
         </div>
         <div class="flow-item__content">
           <span class="flow-item__time">17:30</span>
@@ -213,10 +254,10 @@
     <div class="flow-item" id="flow-4">
       <div class="flow-item__layout">
         <div class="flow-item__images">
-          <div class="img-ph img-ph--flow">IMAGE</div>
+          <img class="img-ph img-ph--flow" src="tinyhotel画像/Y326384089.jpg" alt="焚き火の炎">
           <div class="flow-item__images-sub">
-            <div class="img-ph img-ph--flow-sub">IMAGE</div>
-            <div class="img-ph img-ph--flow-sub">IMAGE</div>
+            <img class="img-ph img-ph--flow-sub" src="tinyhotel画像/Y326384072.jpg" alt="夜のウッドデッキ">
+            <img class="img-ph img-ph--flow-sub" src="tinyhotel画像/Y326384074.jpg" alt="暖炉の灯り">
           </div>
         </div>
         <div class="flow-item__content">
@@ -231,7 +272,7 @@
     <div class="flow-item" id="flow-5">
       <div class="flow-item__layout">
         <div class="flow-item__images">
-          <div class="img-ph img-ph--flow">IMAGE</div>
+          <img class="img-ph img-ph--flow" src="tinyhotel画像/Y326384081.jpg" alt="ベッドルームで寛ぐ">
         </div>
         <div class="flow-item__content">
           <span class="flow-item__time">23:00</span>
@@ -245,10 +286,10 @@
     <div class="flow-item" id="flow-6">
       <div class="flow-item__layout">
         <div class="flow-item__images">
-          <div class="img-ph img-ph--flow">IMAGE</div>
+          <img class="img-ph img-ph--flow" src="tinyhotel画像/4.jpg" alt="朝食プレート">
           <div class="flow-item__images-sub">
-            <div class="img-ph img-ph--flow-sub">IMAGE</div>
-            <div class="img-ph img-ph--flow-sub">IMAGE</div>
+            <img class="img-ph img-ph--flow-sub" src="tinyhotel画像/LINE_ALBUM_tiny_260420_5.jpg" alt="コーヒーケトル">
+            <img class="img-ph img-ph--flow-sub" src="tinyhotel画像/LINE_ALBUM_tiny_260420_14.jpg" alt="朝の森">
           </div>
         </div>
         <div class="flow-item__content">
@@ -263,7 +304,7 @@
     <div class="flow-item" id="flow-7">
       <div class="flow-item__layout">
         <div class="flow-item__images">
-          <div class="img-ph img-ph--flow">IMAGE</div>
+          <img class="img-ph img-ph--flow" src="tinyhotel画像/LINE_ALBUM_tiny_260420_9.jpg" alt="デッキから森を眺める">
         </div>
         <div class="flow-item__content">
           <span class="flow-item__time">11:00</span>
@@ -283,10 +324,10 @@
     <div class="container">
       <div class="room-detail__layout">
         <div class="room-detail__images">
-          <div class="img-ph img-ph--room-main">IMAGE</div>
+          <img class="img-ph img-ph--room-main" src="tinyhotel画像/LINE_ALBUM_tiny_260420_7.jpg" alt="客室全景">
           <div class="room-detail__images-sub">
-            <div class="img-ph img-ph--room-sub">IMAGE</div>
-            <div class="img-ph img-ph--room-sub">IMAGE</div>
+            <img class="img-ph img-ph--room-sub" src="tinyhotel画像/LINE_ALBUM_tiny_260420_16.jpg" alt="バスルーム">
+            <img class="img-ph img-ph--room-sub" src="tinyhotel画像/Y326384054.jpg" alt="HARVIA製の本格電気ストーブサウナ">
           </div>
         </div>
         <div class="room-detail__info">
@@ -333,32 +374,32 @@
       <p class="anshin__sub">初めてのご利用でも不安なく。よくいただくご質問に、先回りしてお答えします。</p>
       <div class="anshin__grid">
         <div class="anshin__card">
-          <div class="img-ph img-ph--anshin">IMAGE</div>
+          <img class="img-ph img-ph--anshin" src="tinyhotel画像/LINE_ALBUM_tiny_260420_11.jpg" alt="密閉感のある客室">
           <h3>虫対策について</h3>
           <p>施設周辺は定期的に防虫処理を実施。室内は密閉性の高いコンテナ構造のため、虫の侵入を最小限に抑えています。虫除けスプレー・蚊取り線香もご用意しております。</p>
         </div>
         <div class="anshin__card">
-          <div class="img-ph img-ph--anshin">IMAGE</div>
+          <img class="img-ph img-ph--anshin" src="tinyhotel画像/LINE_ALBUM_tiny_260420_3.jpg" alt="冬のウッドデッキ">
           <h3>冬の寒さ・暖房について</h3>
           <p>室内は冷暖房エアコン完備で冬でも快適。サウナも通年ご利用いただけます。雪景色の中でのサウナ×外気浴は、冬ならではの格別な体験です。</p>
         </div>
         <div class="anshin__card">
-          <div class="img-ph img-ph--anshin">IMAGE</div>
+          <img class="img-ph img-ph--anshin" src="tinyhotel画像/Y326384055.jpg" alt="清潔なトイレ">
           <h3>トイレ・水回りの清潔さ</h3>
           <p>各棟に専用のバス・シャワーブース・トイレ・洗面台を完備。共用ではなく完全プライベートです。清掃は毎回徹底して行っております。</p>
         </div>
         <div class="anshin__card">
-          <div class="img-ph img-ph--anshin">IMAGE</div>
+          <img class="img-ph img-ph--anshin" src="tinyhotel画像/container-office-02.jpg" alt="コンテナ内のワークスペース">
           <h3>Wi-Fi・電波について</h3>
           <p>施設内は無料Wi-Fi完備、携帯電話の電波も問題なく届きます。お仕事やSNS投稿もストレスなく行えます。</p>
         </div>
         <div class="anshin__card">
-          <div class="img-ph img-ph--anshin">IMAGE</div>
+          <img class="img-ph img-ph--anshin" src="tinyhotel画像/LINE_ALBUM_tiny_260420_18.jpg" alt="充実のアメニティ">
           <h3>アメニティ充実</h3>
           <p>シャンプー・コンディショナー・ボディソープ等のバスアメニティを完備。歯ブラシ・ヘアブラシ・コットン等もご用意。手ぶらでもご安心ください。</p>
         </div>
         <div class="anshin__card">
-          <div class="img-ph img-ph--anshin">IMAGE</div>
+          <img class="img-ph img-ph--anshin" src="tinyhotel画像/Y326384077.jpg" alt="冬の雪上外気浴">
           <h3>季節ごとの楽しみ方</h3>
           <p>春夏は新緑の森でBBQ・焚き火・星空観察。秋は紅葉に包まれたサウナ×外気浴。冬は雪景色の中のサウナ体験。通年営業でいつでもお楽しみいただけます。</p>
         </div>
@@ -425,7 +466,9 @@
   <section class="access" id="access">
     <div class="container">
       <h2 class="section-title">アクセス</h2>
-      <div class="img-ph img-ph--map">Google Map</div>
+      <div class="img-ph img-ph--map">
+        <iframe src="https://www.google.com/maps?q=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E5%8D%97%E5%8C%BA%E8%8A%B8%E8%A1%93%E3%81%AE%E6%A3%AE&output=embed" width="100%" height="100%" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
       <p class="access__address">芸森ワーサム（W-AWESOME）<br>〒005-0864 北海道札幌市南区芸術の森</p>
       <div class="access__routes">
         <div class="access__col">
@@ -475,7 +518,7 @@
 
   <!-- RESERVE -->
   <section class="reserve" id="reserve">
-    <div class="reserve__bg"><div class="img-ph img-ph--reserve-bg">IMAGE</div></div>
+    <div class="reserve__bg"><img class="img-ph img-ph--reserve-bg" src="tinyhotel画像/Y326384072.jpg" alt="夜のウッドデッキ"></div>
     <div class="reserve__overlay">
       <div class="container">
         <h2 class="section-title">森の中の特別な一日を、あなたに。</h2>
